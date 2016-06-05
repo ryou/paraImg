@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Test Template</title>
+
+  <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      background: #000;
+      height: 1000px;
+    }
+    .paraWrapper {
+      position: relative;
+      height: 500px;
+      overflow: hidden;
+    }
+    .paraBg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    .paraBg img {
+      width: 100%;
+      vertical-align: bottom;
+    }
+  </style>
+  <script>
+    $(function() {
+      //
+    });
+  </script>
+</head>
+<body>
+  <div class="box"></div>
+  <div class="paraWrapper">
+    <div class="paraBg"><img src="bg_para.jpg" alt=""></div>
+  </div>
+  <!-- /.paraWrapper -->
+  <div class="box"></div>
+  <script src="para.js"></script>
+  <script>
+  $(function() {
+    $('.paraWrapper').paraImg({
+      imgOrgSize: {
+        h: 1066,
+        w: 1600
+      }
+    });
+  });
+  </script>
+</body>
+</html>
